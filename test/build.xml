@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="test" description="bee archive test" basedir='../'>
+
+  <target name="zip">
+    <zip destfile='tmp/example.zip'>
+	  <fileset dir='assets'>
+	    <include>*</include>
+	  </fileset>
+	  <item name='code/star.gif' file='assets/star.gif'></item>
+	  <item name='code/dir/'></item>
+	  <item name='code/content.txt'>generated content</item>
+	</zip>
+  </target>
+
+  <target name="unzip">
+    <unzip file="tmp/example.zip" dest="tmp/example"/>
+  </target>
+
+</project>

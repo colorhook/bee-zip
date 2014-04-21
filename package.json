@@ -1,0 +1,46 @@
+{
+    "name": "bee-zip",
+    "version": "0.1.0",
+	"description": "bee zip unzip plugin",
+    "keywords": ["bee plugin","zip unzip"],
+    "main": "lib/index.js",
+    "bin": {
+    },
+    "engines": {
+        "node" : ">=0.8.0"
+    },
+	"author": "colorhook <colorhook@gmail.com>",
+	"maintainers": [{
+      "name": "colorhook",
+      "email": "colorhook@gmail.com",
+      "url": "http://github.com/colorhook"
+    }],
+	"bugs": {
+        "email": "colorhook@gmail.com",
+        "url": "http://github.com/colorhook/bee-zip/issues"
+    },
+
+    "dependencies": {
+      "archiver": "~0.8.1",
+      "unzip": "~0.1.9",
+      "iconv-lite": "*"
+    },
+    "devDependencies":{
+        "mocha": "~1.7.4",
+        "should": "~1.2.2"
+    },
+    "scripts":{
+        "test": "mocha --require should test --timeout 10000 --globals hasCert --ignore-leaks"
+    },
+    "homepage": "https://github.com/colorhook/bee-zip",
+    "repository" : {
+        "type" : "git",
+        "url" : "git://github.com/colorhook/bee-zip.git"
+    },
+	"licenses": [
+        {
+            "type": "MIT",
+            "url": "http://github.com/colorhook/bee-zip/blob/master/LICENSE"
+        }
+    ]
+}
